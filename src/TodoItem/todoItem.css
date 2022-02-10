@@ -1,0 +1,51 @@
+.todo-item {
+    list-style: none;
+    text-transform: capitalize;
+    height: 200px;
+    border-radius: 4px;
+    padding: 32px 16px 16px 16px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 6px #00000020;
+    cursor: pointer;
+    transition: 300ms;
+    position: relative;
+    color: #303030;
+}
+
+.todo-item-completed {
+    background-color: #59e7bd;
+}
+
+.todo-item:hover, .todo-item:active, .todo-item:focus {
+    transform: scale(1.05);
+}
+
+.todo-item .close, .todo-item .check {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    color: #303030;
+    transition: 300ms;
+}
+
+.todo-item .close:hover,
+.todo-item .close:active,
+.todo-item .close:focus {
+    color: #d62525;
+}
+
+.todo-item .check {
+    bottom: 8px;
+    top: initial;
+    right: 8px;
+}
+
+.todo-item .check:hover,
+.todo-item .check:active,
+.todo-item .check:focus {
+    color: #00a035;
+}
