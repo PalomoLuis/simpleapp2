@@ -1,0 +1,29 @@
+.header {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    align-items: center;
+    padding: 0 32px;
+    color: #303030;
+    background-color: #00ccff;
+}
+
+.dark-mode {
+    color: #e1e1e1; 
+    background-color: #141414;
+}
+
+.nav ul{
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav li {
+    list-style: none;
+}

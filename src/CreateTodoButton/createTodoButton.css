@@ -1,0 +1,50 @@
+.create-todo-btn {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 24px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ccff;
+    cursor: pointer;
+    transition: 300ms;
+    z-index: 9;
+}
+.create-todo-btn:hover,
+.create-todo-btn:active,
+.create-todo-btn:focus {
+    background-color: #00f0f8;
+    /* transform: scale(1.1); */
+    animation: beat 1.2s ease-in-out infinite;
+}
+
+.todo-btn_close {
+    background-color: #ffffff !important;
+}
+
+/* .todo-btn_close:hover,
+.todo-btn_close:active,
+.todo-btn_close:focus {
+    animation: beat 1.2s ease-in-out infinite;
+} */
+
+@keyframes beat {
+    0% { transform: scale(1.);
+        background-color: #00ccff;
+    }
+    25% { transform: scale(1);
+        background-color: #00ccff;
+    }
+    50% { transform: scale(1.1);
+        background-color: #18dcff;
+    }
+    75% { transform: scale(1);
+        background-color: #00ccff;
+    }
+    100% { transform: scale(1);
+        background-color: #00ccff;
+    }
+}
